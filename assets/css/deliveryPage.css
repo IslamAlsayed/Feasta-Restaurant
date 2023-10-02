@@ -1,0 +1,196 @@
+
+/* start style component tabs */
+.section-tabs {
+  margin-block: 50px;
+}
+
+.section-tabs .container {
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+
+
+.section-tabs .tabs {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-tabs .tabs .tab {
+  cursor: pointer;
+  transition: .1s;
+}
+
+.section-tabs .tabs .tab.active {
+  color: var(--main-color);
+}
+
+.section-tabs .total>span {
+  margin-inline: 10px;
+  color: var(--main-color);
+}
+
+/* end style component tabs */
+
+/* start style component dishes */
+.section-dishes .dishes {
+  gap: 40px 20px;
+  display: grid;
+  position: relative;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+
+/* start style component dishes [ dish ] */
+.section-dishes .dishes .dish {
+  position: relative;
+  transition: all .3s;
+
+  /* display: none; */
+}
+
+/* start style component dishes [ dish image ] */
+.section-dishes .dishes .dish .dish-img {
+  height: 250px;
+  position: relative;
+  z-index: 3;
+}
+
+.section-dishes .dishes .dish .dish-img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+  background-color: var(--dark-color);
+}
+
+.section-dishes .dishes .dish:hover .dish-img::after {
+  opacity: .5;
+}
+
+/* start style component dishes [ dish information ] */
+.section-dishes .dishes .dish .information {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+}
+
+/* start style component dishes [ dish info, buy ] */
+.section-dishes .dishes .dish .information .dish-info,
+.section-dishes .dishes .dish .information .dish-buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  transition: .3s;
+}
+
+/* start style component dishes [ dish info ] */
+.section-dishes .dishes .dish .information .dish-info {
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.section-dishes .dishes .dish:hover .information .dish-info {
+  color: var(--light-color);
+  transform: translate(-50%, -210px);
+}
+
+.section-dishes .dishes .dish .information .dish-info h3 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.section-dishes .dishes .dish .information .dish-info .rate {
+  color: var(--main-color);
+}
+
+.section-dishes .dishes .dish .information .dish-info h3:after {
+  content: '';
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.section-dishes .dishes .dish:hover .information .dish-info h3:after {
+  border-bottom: 1px solid var(--light-color);
+}
+
+/* start style component dishes [ dish ingredients ] */
+.section-dishes .dishes .dish .information .dish-info .ingredients {
+  padding: 5px 10px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  text-decoration: none;
+  color: var(--light-color);
+  transform: translate(-50%, 0);
+  background-color: var(--main-color);
+}
+
+.section-dishes .dishes .dish:hover .information .dish-info .ingredients {
+  display: block;
+  opacity: 1;
+  transition: opacity .3s .3s;
+  transform: translate(-50%, 40px);
+}
+
+/* start style component dishes [ dish buy ] */
+.section-dishes .dishes .dish .information .dish-buy {
+  z-index: 1;
+  transform: translate(-50%, -150px);
+}
+
+.section-dishes .dishes .dish:hover .information .dish-buy {
+  transform: translate(-50%, -50%);
+}
+
+.section-dishes .dishes .dish .information .dish-buy a {
+  padding: 5px;
+  display: block;
+  transition: .3s;
+  border-radius: 3px;
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.section-dishes .dishes .dish .information .dish-buy a:hover {
+  color: var(--light-color);
+  background-color: var(--main-color-50);
+}
+
+.section-dishes .dishes .dish .information .dish-buy a:after {
+  content: '';
+  width: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.section-dishes .dishes .dish .information .dish-buy p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* end style component dishes */

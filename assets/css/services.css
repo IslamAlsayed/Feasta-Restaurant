@@ -1,0 +1,199 @@
+/* start style section we do */
+.section-we-do {
+  position: relative;
+  margin-block: 50px;
+}
+
+.section-we-do::after {
+  content: '';
+  width: 180px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/other/mango.png');
+}
+
+.section-we-do .we-do {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-we-do .we-do .info {
+  width: 70%;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  color: var(--dark-color-50);
+}
+
+.section-we-do .we-do .info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: var(--Playball);
+}
+
+.section-we-do .we-do .info h2 span {
+  color: var(--main-color);
+}
+
+.section-we-do .we-do .info p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section-we-do .we-do .info .our-menu a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-we-do .we-do .img {
+  flex: 1;
+}
+
+/* end style section we do */
+
+/* start style section spicial services */
+.section-spicial-services {
+  text-align: center;
+  padding-block: 50px;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  background-color: var(--light-color-90);
+}
+
+.section-spicial-services .spicial-services .title {
+  margin-bottom: 30px;
+  color: var(--dark-color-50);
+}
+
+.section-spicial-services .spicial-services .title h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  font-family: var(--Playball);
+}
+
+.section-spicial-services .spicial-services .title h2 span {
+  color: var(--main-color);
+}
+
+.section-spicial-services .spicial-services .title p {
+  line-height: 1.3;
+}
+
+.section-spicial-services .spicial-services .cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.section-spicial-services .spicial-services .cards .card {
+  padding: 40px;
+  transition: .3s;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--dark-color-50);
+}
+
+.section-spicial-services .spicial-services .cards .card:hover,
+.section-spicial-services .spicial-services .cards .card.active {
+  background-color: var(--light-color);
+  box-shadow: 0 7px 14px 0 rgba(100, 100, 111, 0.2);
+}
+
+.section-spicial-services .spicial-services .cards .card img {
+  width: 70px;
+  height: 70px;
+}
+
+.section-spicial-services .spicial-services .cards .card span {
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: var(--dark-color-50);
+}
+
+.section-spicial-services .spicial-services .cards .card span::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.section-spicial-services .spicial-services .cards .card p {
+  font-size: 14px;
+}
+
+/* end style section spicial services */
+
+/* start style section tasty food" */
+.section-tasty-food {
+  padding-block: 70px;
+  text-align: center;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+}
+
+.section-tasty-food .tasty-food h2 {
+  font-size: 32px;
+  font-family: var(--Playball);
+}
+
+.section-tasty-food .tasty-food h2 span {
+  color: var(--main-color);
+}
+
+.section-tasty-food .tasty-food p {
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+  margin-block: 10px 30px;
+}
+
+.section-tasty-food .tasty-food .btns a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-inline: 5px;
+  transition: .3s;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid var(--main-color);
+}
+
+.section-tasty-food .tasty-food .btns a:first-child {
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-tasty-food .tasty-food .btns a:first-child:hover {
+  color: var(--main-color);
+  background-color: var(--light-color);
+}
+
+.section-tasty-food .tasty-food .btns a:last-child {
+  color: var(--main-color);
+  background-color: var(--light-color);
+}
+
+.section-tasty-food .tasty-food .btns a:last-child:hover {
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+
+/* end style section tasty food" */

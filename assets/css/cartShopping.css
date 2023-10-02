@@ -1,0 +1,254 @@
+
+/* start style component table products */
+.section-table-products {
+  margin-block: 50px;
+}
+
+.section-table-products .products {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+}
+
+.section-table-products .products table {
+  width: 100%;
+  vertical-align: baseline;
+  border-collapse: collapse;
+  color: var(--dark-color-50);
+}
+
+.section-table-products .products table thead,
+.section-table-products .products table tfoot {
+  height: 40px;
+}
+
+.section-table-products .products table tbody tr td {
+  padding-block: 30px;
+}
+
+.section-table-products .products table tbody tr td:last-child,
+.section-table-products .products table tbody tr td:nth-last-child(2) {
+  padding: 30px;
+}
+
+.section-table-products .products table tbody .product-img {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-table-products .products table tbody .product-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.section-table-products .products table tbody .quantity>span {
+  width: 40px;
+  height: 40px;
+  line-height: 37px;
+  border-radius: 3px;
+  display: inline-block;
+  color: var(--main-color);
+  background-color: var(--light-color);
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .products table tbody .quantity>input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-inline: 5px;
+  border-radius: 3px;
+  text-align: center;
+  pointer-events: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-table-products .products table tr td>span {
+  color: var(--main-color);
+}
+
+.section-table-products .products table tr,
+.section-table-products .products table tr th,
+.section-table-products .products table tr td {
+  position: relative;
+}
+
+.section-table-products .products table tr::after,
+.section-table-products .products table tr th::after,
+.section-table-products .products table tr td::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  z-index: -1;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .discount {
+  width: calc(50% - 10px);
+  margin-top: 50px;
+}
+
+.section-table-products .discount form {
+  width: 100%;
+  gap: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-table-products .discount form input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .discount form button {
+  border: none;
+  outline: none;
+  height: 100%;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  padding-inline: 20px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  background-color: var(--main-color);
+}
+
+.section-table-products .pay {
+  gap: 20px;
+  display: grid;
+  margin-top: 50px;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 2fr)); */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-table-products .pay h2 {
+  margin-bottom: 20px;
+  color: var(--dark-color-50);
+}
+
+.section-table-products .pay .address form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .pay .address form .group {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-table-products .pay .address form button {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  background-color: var(--main-color);
+}
+
+.section-table-products .pay .confirm-order h2 {
+  padding: 10px 30px;
+  position: relative;
+  margin: 0;
+}
+
+.section-table-products .pay .confirm-order h2::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .pay .confirm-order .order {
+  margin-bottom: 20px;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .pay .confirm-order .order .row {
+  display: grid;
+  padding: 15px 30px;
+  white-space: nowrap;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-table-products .pay .confirm-order .order .row:nth-child(2)::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .3;
+  border-bottom: 1px solid var(--dark-color-50);
+}
+
+.section-table-products .pay .confirm-order .order .row .col.shipping {
+  font-size: 12px;
+}
+
+.section-table-products .pay .confirm-order .order .row .col>span {
+  color: var(--main-color);
+}
+
+.section-table-products .pay .confirm-order .confirm {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-table-products .pay .confirm-order .confirm a {
+  width: 100%;
+  text-align: center;
+  padding-block: 15px;
+}
+
+.section-table-products .pay .confirm-order .confirm a {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--main-color);
+  text-transform: uppercase;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-table-products .pay .confirm-order .confirm .botton {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  background-color: var(--main-color);
+}
+
+/* end style component table products */

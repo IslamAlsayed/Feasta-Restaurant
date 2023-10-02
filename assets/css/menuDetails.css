@@ -1,0 +1,535 @@
+/* start style section details menu */
+.section-details-menu {
+  margin-block: 50px;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+}
+
+/* start style section [ details ] */
+.section-details-menu .details {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-details-menu .details>div {
+  width: 50%;
+}
+
+.section-details-menu .details .details-imgs {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-details-menu .details .details-imgs>div img {
+  background-color: var(--light-color-50);
+}
+
+.section-details-menu .details .details-imgs .sub-imgs {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc((70px * 4) + (3 * 20px));
+}
+
+.section-details-menu .details .details-imgs .sub-imgs img {
+  width: 70px;
+  height: 70px;
+}
+
+.section-details-menu .details .details-imgs .main-img {
+  flex: 1;
+  height: calc((70px * 4) + (3 * 20px));
+}
+
+.section-details-menu .details .details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-details-menu .details .details-info .row:not(:last-child) {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-details-menu .details .details-info .row:not(:last-child)::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .3;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.section-details-menu .details .details-info .row p {
+  width: 70%;
+}
+
+.section-details-menu .details .details-info .row p:first-of-type {
+  margin-block: 5px 15px;
+}
+
+.section-details-menu .details .details-info .row>form {
+  display: flex;
+  align-items: center;
+}
+
+.section-details-menu .details .details-info .row>form span,
+.section-details-menu .details .details-info .row>form input {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.section-details-menu .details .details-info .row>form span {
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  color: var(--dark-color-50);
+  border: 1px solid var(--dark-color-50);
+}
+
+.section-details-menu .details .details-info .row>form input {
+  border: none;
+  margin-inline: 5px;
+  pointer-events: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-details-menu .details .details-info .row>form input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.section-details-menu .details .details-info .row>form button {
+  width: 120px;
+  border: none;
+  transition: .1s;
+  cursor: pointer;
+  padding-block: 8px;
+  margin-left: 20px;
+  border-radius: 3px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  background-color: var(--main-color-50);
+}
+
+.section-details-menu .details .details-info .row>form button:hover {
+  background-color: var(--main-color);
+}
+
+.section-details-menu .details .details-info .row:nth-child(2) .col,
+.section-details-menu .details .details-info .row:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-details-menu .details .details-info .row>.col>span>span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.section-details-menu .details .details-info .row h3 {
+  color: var(--main-color);
+}
+
+.section-details-menu .details .details-info .row p {
+  font-size: 10px;
+}
+
+.section-details-menu .details .details-info .row .col {
+  font-size: 14px;
+}
+
+.section-details-menu .details .details-info .row:last-child .col:last-child {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-details-menu .details .details-info .row:last-child .col:last-child a {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  color: var(--dark-color-50);
+  border: 1px solid var(--dark-color-50);
+}
+
+.section-details-menu .details .details-info .row:last-child .col:last-child a:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+/* start style section [ tabs ] */
+.section-details-menu .tabs {
+  padding-block: 20px;
+}
+
+.section-details-menu .tabs .tab {
+  padding-bottom: 3px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: .1s;
+  opacity: .5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-details-menu .tabs .tab.active {
+  opacity: 1;
+  border-bottom: 2px solid var(--main-color);
+}
+
+/* start style section [ description ] */
+.section-details-menu .tab_inner>div>p {
+  width: 70%;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-block: 10px 30px;
+}
+
+.section-details-menu .tab_inner>div>p>span {
+  color: var(--main-color);
+}
+
+.section-details-menu .tab_inner .description .how-cooking {
+  display: flex;
+  align-items: start;
+}
+
+.section-details-menu .tab_inner .description .how-cooking>div {
+  width: 50%;
+}
+
+.section-details-menu .tab_inner .description .how-cooking h3 {
+  margin-bottom: 10px;
+  text-decoration: underline 1px var(--dark-color-50);
+  color: var(--main-color);
+}
+
+.section-details-menu .tab_inner .description .how-cooking .ingredients ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.section-details-menu .tab_inner .description .how-cooking .ingredients ul li>span {
+  font-weight: 900;
+  color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-details-menu .tab_inner .description .how-cooking .how-to-make-it .steps .step span {
+  font-weight: 700;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.section-details-menu .tab_inner .description .how-cooking .how-to-make-it .steps .step {
+  margin-bottom: 20px;
+}
+
+/* start style section [ reviews ] */
+.section-details-menu .tab_inner .reviews {
+  font-family: var(--Roboto);
+}
+
+.section-details-menu .tab_inner>div.reviews>p {
+  font-size: 16px;
+}
+
+.section-details-menu .tab_inner>div.reviews>p>span {
+  font-weight: 700;
+}
+
+.section-details-menu .tab_inner .reviews .review {
+  gap: 20px;
+  display: flex;
+  position: relative;
+}
+
+.section-details-menu .tab_inner .reviews .review .reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .1s;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--dark-color-50);
+}
+
+.section-details-menu .tab_inner .reviews .review .reply:hover {
+  color: var(--main-color);
+}
+
+.section-details-menu .tab_inner .reviews .review:not(:last-child) {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.section-details-menu .tab_inner .reviews .review:not(:last-child)::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: .1;
+  border-bottom: 2px solid var(--dark-color);
+}
+
+
+.section-details-menu .tab_inner .reviews .review .review-img {
+  width: 120px;
+  height: 120px;
+}
+
+.section-details-menu .tab_inner .reviews .review .review-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-details-menu .tab_inner .reviews .review .review-info .row.stars,
+.section-details-menu .tab_inner .reviews .review .review-info .row:nth-child(2) {
+  color: var(--main-color);
+}
+
+.section-details-menu .tab_inner .reviews .review .review-info .row>h2 {
+  color: var(--dark-color-50);
+}
+
+.section-details-menu .tab_inner .reviews .review .review-info .row.comment {
+  opacity: .7;
+  font-size: 14px;
+}
+
+/* start style section form [ leave a comment ] */
+.section-details-menu .tab_inner .form h2 {
+  margin-block: 50px 10px;
+}
+
+.section-details-menu .tab_inner .form form .row {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.section-details-menu .tab_inner .form form .row .group {
+  width: calc(50% - 10px);
+  height: 50px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.section-details-menu .tab_inner .form form .row .group::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: .1;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.section-details-menu .tab_inner .form form .row .group.rate {
+  display: flex;
+  align-items: center;
+}
+
+.section-details-menu .tab_inner .form form .row .group.rate .rate_star {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.section-details-menu .tab_inner .form form .row .group.rate .rate_star i {
+  font-size: 20px;
+}
+
+.section-details-menu .tab_inner .form form .row .group.rate .rate_star i:hover,
+.section-details-menu .tab_inner .form form .row .group.rate .rate_star i.active {
+  color: var(--main-color);
+}
+
+.section-details-menu .tab_inner .form form .row .group.rate>p {
+  margin-right: 25px;
+}
+
+.section-details-menu .tab_inner .form form .row .group.comment {
+  width: 100%;
+  height: 90px;
+}
+
+.section-details-menu .tab_inner .form form .row .group>input,
+.section-details-menu .tab_inner .form form .row .group>textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  padding-inline-start: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-details-menu .tab_inner .form form .row .group>textarea {
+  padding-top: 5px;
+}
+
+.section-details-menu .tab_inner .form form .row .group>input::placeholder,
+.section-details-menu .tab_inner .form form .row .group>textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.section-details-menu .tab_inner .form form button {
+  width: 150px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-block: 10px;
+  letter-spacing: 1px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  background-color: var(--main-color);
+}
+
+/* end style section details menu */
+
+/* start style section section also like */
+.section-also-like {
+  margin-block: 100px 50px;
+  text-align: center;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+}
+
+.section-also-like .title {
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-also-like .dishes {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.section-also-like .dishes .dish .dish-img {
+  height: 250px;
+  position: relative;
+}
+
+.section-also-like .dishes .dish .dish-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.section-also-like .dishes .dish .dish-img::after {
+  content: attr(data-hover);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  opacity: 0;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  place-content: center;
+  color: var(--main-color);
+  background-color: var(--dark-color);
+  transform: scale(.5);
+  filter: blur(7px);
+}
+
+.section-also-like .dishes .dish:hover .dish-img::after {
+  opacity: .7;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.section-also-like .dishes .dish .dish-info {
+  position: relative;
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish .buy {
+  padding: 5px;
+  font-size: 14px;
+  margin-block: 15px;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish .details {
+  font-size: 12px;
+  color: var(--main-color);
+  text-decoration: underline 1px var(--dark-color);
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-color);
+}
+
+.section-also-like .dishes .dish .dish-info h2 {
+  margin-block: 10px;
+}
+
+.section-also-like .dishes .dish .dish-info .rate {
+  color: var(--main-color);
+}
+
+.section-also-like .dishes .dish .dish-info .details-dish {
+  transition: .3s;
+  transform: scale(0);
+}
+
+.section-also-like .dishes .dish .dish-info h2,
+.section-also-like .dishes .dish .dish-info .rate {
+  transition: .3s;
+  transform: scale(1);
+}
+
+.section-also-like .dishes .dish:hover .dish-info h2,
+.section-also-like .dishes .dish:hover .dish-info .rate {
+  transform: scale(0);
+}
+
+.section-also-like .dishes .dish:hover .dish-info .details-dish {
+  transform: scale(1) translateY(-50px);
+}
+
+
+/* end style section section also like */

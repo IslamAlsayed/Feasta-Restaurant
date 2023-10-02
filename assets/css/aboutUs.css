@@ -1,0 +1,426 @@
+
+/* start style component best coffee */
+
+.section-best-coffee {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 50px;
+  margin-block: 50px;
+  position: relative;
+  z-index: 3;
+  background-image: linear-gradient(to right, var(--main-color) 50%, transparent 50%);
+}
+
+.section-best-coffee::before,
+.section-best-coffee::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/other/coffee-beans.png');
+}
+
+.section-best-coffee::before {
+  left: 0;
+  opacity: .3;
+  transform: scale(-1);
+}
+
+.section-best-coffee::after {
+  right: 0;
+  opacity: .1;
+  transform: scale(1.5);
+}
+
+.section-best-coffee .best-coffee {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* end style component best coffee [ date ] */
+.section-best-coffee .best-coffee>div {
+  flex: 1;
+}
+
+.section-best-coffee .best-coffee .best-coffee-date * {
+  color: var(--light-color);
+}
+
+.section-best-coffee .best-coffee .best-coffee-date h2 {
+  font-family: var(--Playball);
+}
+
+.section-best-coffee .best-coffee .best-coffee-date p {
+  margin-top: 5px;
+}
+
+.section-best-coffee .best-coffee .best-coffee-date a {
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.section-best-coffee .best-coffee .best-coffee-date a:first-of-type {
+  margin-top: 15px;
+}
+
+/* end style component best coffee [ image ] */
+.section-best-coffee .best-coffee .best-coffee-img {
+  width: 300px;
+  transform: scaleX(-1);
+}
+
+/* end style component best coffee [ info ] */
+.section-best-coffee .best-coffee .best-coffee-info {
+  text-align: start;
+}
+
+.section-best-coffee .best-coffee .best-coffee-info>div {
+  font-size: 26px;
+  font-family: var(--Playball);
+}
+
+.section-best-coffee .best-coffee .best-coffee-info>div>span {
+  color: var(--main-color);
+}
+
+.section-best-coffee .best-coffee .best-coffee-info p {
+  font-size: 12px;
+  line-height: 1.3;
+  margin-block: 10px;
+}
+
+.section-best-coffee .best-coffee .best-coffee-info img {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+}
+
+/* end style component best coffee */
+
+/* start style component slider team chef */
+.section-team-cheff {
+  overflow: hidden;
+  position: relative;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+}
+
+.section-team-cheff::before,
+.section-team-cheff::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-team-cheff::before {
+  width: 50%;
+  height: 50%;
+  top: 300px;
+  right: -200px;
+  opacity: .5;
+  transform: rotate(-45deg);
+  background-image: url('../images/other/spices2.png');
+}
+
+.section-team-cheff::after {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  left: 0;
+  background-image: url('../images/other/spices.png');
+}
+
+.section-team-cheff .slider {
+  padding-block: 50px;
+  margin-block: 50px;
+  overflow: hidden;
+}
+
+/* start style component slider team chef [ cards ] */
+.section-team-cheff .slider .cards {
+  width: 100%;
+  transition: .3s;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.section-team-cheff .slider .cards,
+.section-team-cheff .slider .cards .card,
+.section-team-cheff .slider .cards .card .chef {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* start style component slider team chef [ alone card ]*/
+.section-team-cheff .slider .cards .card {
+  min-width: 100%;
+}
+
+.section-team-cheff .slider .cards .card,
+.section-team-cheff .slider .cards .card .chef {
+  gap: 20px;
+}
+
+.section-team-cheff .slider .cards .card .chef {
+  position: relative;
+}
+
+.section-team-cheff .slider .cards .card .chef:first-child:after {
+  content: '';
+  width: 2px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  transform: translateY(-50%);
+  background-color: var(--main-color);
+}
+
+/* start style component slider team chef [ card image ] */
+.section-team-cheff .slider .cards .card .chef .chef-img {
+  width: 170px;
+}
+
+/* start style component slider team chef [ card info ] */
+.section-team-cheff .slider .cards .card .chef .chef-info {
+  flex: 1;
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info h2 {
+  color: var(--main-color);
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info p {
+  font-size: 10px;
+  line-height: 1.6;
+  margin-block: 10px;
+}
+
+/* start style component slider team chef [ card social ] */
+.section-team-cheff .slider .cards .card .chef .chef-info .social {
+  gap: 10px;
+  display: flex;
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info .social>a {
+  margin-top: 10px;
+  font-size: 18px;
+  transition: .1s;
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info .social>a:hover {
+  margin-top: -5px;
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info .social>a:first-child {
+  color: var(--facebook-color);
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info .social>a:nth-child(2) {
+  color: var(--twitter-color);
+}
+
+.section-team-cheff .slider .cards .card .chef .chef-info .social>a:last-child {
+  color: var(--google-color);
+}
+
+/* start style component slider team chef [ slider controls ] */
+.section-team-cheff .slider .slider-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.section-team-cheff .slider .slider-controls span {
+  width: 40px;
+  height: 7px;
+  transition: .3s;
+  cursor: pointer;
+  background-color: var(--dark-color-50);
+}
+
+.section-team-cheff .slider .slider-controls span.active {
+  pointer-events: none;
+  background-color: var(--main-color);
+}
+
+/* end style component slider team chef */
+
+/* start style component satisfaction */
+.section-satisfaction {
+  margin-block: 50px;
+}
+
+.section-satisfaction .satisfaction {
+  text-align: center;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  color: var(--dark-color-50);
+}
+
+/* start style component satisfaction [ title ] */
+.section-satisfaction .satisfaction .title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: var(--Playball);
+}
+
+.section-satisfaction .satisfaction .title h2>span {
+  color: var(--main-color);
+}
+
+.section-satisfaction .satisfaction .title p {
+  margin-bottom: 5px;
+}
+
+/* start style component satisfaction [ slider ] */
+.section-satisfaction .satisfaction .slider {
+  margin-block: 50px;
+}
+
+/* start style component satisfaction slider [ cards ] */
+.section-satisfaction .satisfaction .slider .cards {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+/* start style component satisfaction slider [ card ] */
+.section-satisfaction .satisfaction .slider .cards .card {
+  width: 350px;
+  padding: 20px;
+  background-color: var(--light-color-90);
+  box-shadow: 0 0 1px var(--dark-color-50);
+  position: absolute;
+  cursor: pointer;
+  transition: .3s .1s;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card:first-child {
+  left: 0;
+  z-index: 5;
+  filter: blur(5px);
+  transform: translateX(0) scale(.7) perspective(16px) rotateY(1deg);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card:nth-child(2) {
+  left: 35%;
+  z-index: 7;
+  filter: blur(3px);
+  transform: translateX(-50%) scale(.9) perspective(16px) rotateY(.5deg);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card:nth-child(3) {
+  left: 50%;
+  z-index: 9;
+  filter: blur(0);
+  transform: translateX(-50%) scale(1);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card:nth-child(4) {
+  left: 65%;
+  z-index: 7;
+  filter: blur(3px);
+  transform: translateX(-50%) scale(.9) perspective(16px) rotateY(-.5deg);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card:last-child {
+  left: 100%;
+  z-index: 5;
+  filter: blur(5px);
+  transform: translateX(-100%) scale(.7) perspective(16px) rotateY(-1deg);
+}
+
+/* start style component satisfaction slider card [ image ] */
+.section-satisfaction .satisfaction .slider .cards .card .card-img img:hover {
+  transition: .3s;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-img img {
+  transform: scale(1.05);
+}
+
+/* start style component satisfaction slider card [ info ] */
+.section-satisfaction .satisfaction .slider .cards .card .card-info {
+  margin-top: 10px;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info p {
+  display: block;
+  padding-top: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info p::before {
+  content: '';
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 2px solid var(--main-color);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info h2 {
+  margin-block: 10px;
+  color: var(--main-color);
+}
+
+/* start style component satisfaction slider card [ social ] */
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social a {
+  font-size: 18px;
+  transition: .3s;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social a:hover {
+  margin-top: -5px;
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social a:first-child {
+  color: var(--facebook-color);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social a:nth-child(2) {
+  color: var(--twitter-color);
+}
+
+.section-satisfaction .satisfaction .slider .cards .card .card-info .social a:last-child {
+  color: var(--google-color);
+}
+
+/* end style component satisfaction */

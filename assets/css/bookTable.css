@@ -1,0 +1,232 @@
+/* start style component recervation */
+.section-recervation {
+  margin-block: 50px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-recervation::before,
+.section-recervation::after {
+  content: '';
+  height: 200px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-recervation::before {
+  top: 0;
+  left: 0;
+  width: 300px;
+  background-image: url('../images/other/mini-corn.png');
+}
+
+.section-recervation::after {
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  background-image: url('../images/other/Wings.png');
+}
+
+.section-recervation .recervation .title {
+  text-align: center;
+  font-family: var(--Roboto);
+}
+
+.section-recervation .recervation .title h2 {
+  font-size: 32px;
+  font-family: var(--Playball);
+}
+
+.section-recervation .recervation .title h2 span {
+  color: var(--main-color);
+}
+
+.section-recervation .recervation .form {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.section-recervation .recervation .form form .group {
+  gap: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-recervation .recervation .form form input,
+.section-recervation .recervation .form form select,
+.section-recervation .recervation .form form textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  box-shadow: -1px 1px 1px -1px var(--dark-color);
+}
+
+.section-recervation .recervation .form form select,
+.section-recervation .recervation .form form ::placeholder {
+  color: var(--dark-color-50);
+  text-transform: capitalize;
+}
+
+.section-recervation .recervation .form form textarea {
+  height: 70px;
+  resize: none;
+  padding-top: 5px;
+}
+
+.section-recervation .recervation .form form button {
+  display: block;
+  width: 50%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 10px auto 0;
+  letter-spacing: 1px;
+  color: var(--light-color);
+  text-transform: capitalize;
+  background-color: var(--main-color);
+}
+
+/* end style component recervation */
+
+/* start style component eat better */
+.section-eat-better {
+  margin-block: 50px;
+}
+
+.section-eat-better .eat-better {
+  position: relative;
+}
+
+.section-eat-better .eat-better::after {
+  content: '';
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: -250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/other/better.png');
+}
+
+.section-eat-better .eat-better .img {
+  height: 350px;
+  position: relative;
+  transform: scaleX(-1);
+}
+
+.section-eat-better .eat-better .img::after,
+.section-eat-better .eat-better .info::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.section-eat-better .eat-better .img::after {
+  background-color: var(--dark-color);
+}
+
+.section-eat-better .eat-better .info::before {
+  z-index: -1;
+  background-color: var(--main-color);
+}
+
+.section-eat-better .eat-better .info {
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  overflow: hidden;
+  border-radius: 3px;
+  text-align: center;
+  place-content: center;
+  color: var(--light-color);
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  transform: translate(-50%, -50%);
+}
+
+.section-eat-better .eat-better .info p:first-child {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: var(--Playball);
+}
+
+.section-eat-better .row {
+  gap: 20px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-eat-better .row .col p:first-child {
+  font-size: 24px;
+  font-family: var(--Playball);
+}
+
+.section-eat-better .row .col i {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  font-size: 14px;
+  margin: 10px auto;
+  border-radius: 50%;
+  place-content: center;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  position: relative;
+}
+
+.section-eat-better .row .col i::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(120%, -50%);
+  background-color: var(--main-color);
+  box-shadow: -100px 0 0 0 var(--main-color);
+}
+
+.section-eat-better .row .col p:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.section-eat-better .row .col p:nth-of-type(3) {
+  font-size: 20px;
+  margin-block: 10px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-eat-better .row .col a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-eat-better .row .col .img {
+  transform: scale(.7);
+}
+
+/* end style component eat better */

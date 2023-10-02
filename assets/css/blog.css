@@ -1,0 +1,292 @@
+/* start style component blog */
+.section-blog {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/backgrounds/background1.jpg');
+}
+
+.section-blog::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  z-index: 1;
+  background-color: var(--dark-color);
+}
+
+.section-blog .blog {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.section-blog .blog>div {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* style component blog [ info ] */
+.section-blog .blog .blog-info {
+  display: grid;
+  text-align: center;
+  place-content: center;
+  text-transform: capitalize;
+  color: var(--light-color-50);
+}
+
+.section-blog .blog .blog-info span {
+  font-size: 50px;
+  color: var(--main-color);
+  font-family: var(--Playball);
+}
+
+.section-blog .blog .blog-info>p {
+  font-size: 24px;
+  font-family: var(--Roboto);
+}
+
+/* style component blog [ box border ] */
+.section-blog .blog .box-border>div {
+  position: absolute;
+  z-index: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--main-color);
+}
+
+.section-blog .blog .box-border .top,
+.section-blog .blog .box-border .bottom {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-blog .blog .box-border .right,
+.section-blog .blog .box-border .left {
+  height: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-blog .blog .box-border .top {
+  top: 0;
+}
+
+.section-blog .blog .box-border .right {
+  right: 0;
+}
+
+.section-blog .blog .box-border .bottom {
+  bottom: 0;
+}
+
+.section-blog .blog .box-border .left {
+  left: 0;
+}
+
+/* end style component blog */
+
+/* start style component news */
+.section-news {
+  margin-block: 50px;
+}
+
+.section-news .news-title {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  font-size: 32px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-family: var(--Playball);
+  background-color: var(--light-color);
+}
+
+.section-news .news-title::before {
+  content: '';
+  width: 250%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  opacity: .7;
+  transform: translate(-50%, -50%);
+  border-bottom: 4px dotted var(--main-color);
+}
+
+.section-news .news {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.section-news .news .new {
+  width: 100%;
+  transition: .1s;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+}
+
+.section-news .news .new:hover {
+  box-shadow: 0 0 0 2px var(--main-color);
+}
+
+.section-news .news .new .new-img {
+  width: 100%;
+  height: 200px;
+}
+
+.section-news .news .new .new-body {
+  padding: 10px 10px 20px;
+}
+
+.section-news .news .new .new-body .keys,
+.section-news .news .new .new-body .date,
+.section-news .news .new .new-body h3,
+.section-news .news .new .new-body p {
+  margin-bottom: 15px;
+}
+
+.section-news .news .new .new-body .keys {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.section-news .news .new .new-body .keys .key {
+  padding: 5px 10px;
+  border-radius: 3px;
+  pointer-events: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-news .news .new .new-body .date {
+  font-size: 14px;
+}
+
+.section-news .news .new .new-body .date,
+.section-news .news .new .new-body .date>div {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-news .news .new .new-body .date i,
+.section-news .news .new .new-body a {
+  color: var(--main-color);
+}
+
+.section-news .news .new .new-body p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.section-news .news .new .new-body a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* end style component news */
+
+/* start style component subscribe */
+.section-subscribe {
+  position: relative;
+  z-index: 501;
+  margin-block: 50px;
+}
+
+.section-subscribe *,
+.section-subscribe ::placeholder {
+  color: var(--light-color-50);
+}
+
+.section-subscribe .subscribe {
+  gap: 20px;
+  display: flex;
+  padding: 40px 30px;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  justify-content: space-between;
+  background-color: var(--blue-color);
+}
+
+.section-subscribe .subscribe>div {
+  width: 50%;
+}
+
+.section-subscribe .subscribe .subscribe-info span {
+  font-size: 30px;
+  font-family: var(--Playball);
+}
+
+.section-subscribe .subscribe .subscribe-info p {
+  font-family: var(--Roboto);
+}
+
+.section-subscribe .subscribe .subscribe-form form {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-subscribe .subscribe .subscribe-form form .groub {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid var(--light-color);
+}
+
+.section-subscribe .subscribe .subscribe-form form input,
+.section-subscribe .subscribe .subscribe-form form button {
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+}
+
+.section-subscribe .subscribe .subscribe-form form input {
+  left: 0;
+  height: 100%;
+  padding-right: 45px;
+  background: transparent;
+}
+
+.section-subscribe .subscribe .subscribe-form form button {
+  width: 40px;
+  right: 0;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-subscribe .subscribe .subscribe-form form input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+/* end style component subscribe */

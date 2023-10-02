@@ -1,0 +1,269 @@
+
+/* start style component section billing details */
+.section-billing-details {
+  margin-block: 50px;
+}
+
+.section-billing-details .billing-details form {
+  gap: 20px;
+  display: grid;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* start style component section billing details [ details ] */
+.section-billing-details .billing-details form .details {
+  color: var(--dark-color-50);
+}
+
+.section-billing-details .billing-details form .details .coupon {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.section-billing-details .billing-details form .details .coupon label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 1;
+  font-size: 16px;
+  transition: .1s;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.section-billing-details .billing-details form .details .coupon label>span {
+  color: var(--main-color);
+}
+
+.section-billing-details .billing-details form .details .coupon input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-billing-details .billing-details form .details h2 {
+  margin-bottom: 15px;
+}
+
+.section-billing-details .billing-details form .details label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section-billing-details .billing-details form .details label>span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.section-billing-details .billing-details form .details input:not([type="checkbox"]),
+.section-billing-details .billing-details form .details select,
+.section-billing-details .billing-details form .details textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-billing-details .billing-details form .details select {
+  text-transform: capitalize;
+}
+
+.section-billing-details .billing-details form .details .groups,
+.section-billing-details .billing-details form .details .checkbox {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.section-billing-details .billing-details form .details .checkbox input {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+}
+
+.section-billing-details .billing-details form .details .checkbox label {
+  margin: 0;
+  position: relative;
+}
+
+/* start style custom checkbox */
+
+.section-billing-details .billing-details form .details .checkbox input+label:before,
+.section-billing-details .billing-details form .details .checkbox input:checked+label:after,
+.section-billing-details .billing-details form .details .checkbox input:hover+label:after {
+  content: '';
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.section-billing-details .billing-details form .details .checkbox input+label:before {
+  width: 20px;
+  height: 20px;
+  left: -40px;
+  border: 2px solid var(--main-color);
+  background-color: var(--light-color);
+}
+
+.section-billing-details .billing-details form .details .checkbox input:checked+label:after,
+.section-billing-details .billing-details form .details .checkbox input:hover+label:after {
+  width: 10px;
+  height: 10px;
+  left: -33px;
+  background-color: var(--main-color);
+}
+
+.section-billing-details .billing-details form .details .checkbox input:not(:checked):hover+label:after {
+  opacity: .3;
+}
+
+/* end style custom checkbox */
+
+.section-billing-details .billing-details form .details .groups .group {
+  width: 100%;
+}
+
+.section-billing-details .billing-details form .details .order-notes {
+  margin-top: 50px;
+}
+
+.section-billing-details .billing-details form .details .order-notes label {
+  margin-bottom: 10px;
+}
+
+.section-billing-details .billing-details form .details .order-notes textarea {
+  resize: none;
+  height: 90px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+/* start style component section billing details [ products ] */
+.section-billing-details .billing-details form .products {
+  padding: 10px 50px 10px;
+  height: fit-content;
+  margin-top: 125px;
+  box-shadow: 0 0 1px var(--dark-color-50);
+}
+
+.section-billing-details .billing-details form .products .row {
+  display: flex;
+  position: relative;
+  padding-block: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-billing-details .billing-details form .products .row:not(:nth-last-of-type(2)):after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: .1;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.section-billing-details .billing-details form .products .row .col>span {
+  color: var(--main-color);
+}
+
+.section-billing-details .billing-details form .products .payment {
+  margin: 30px 0 0 40px;
+}
+
+.section-billing-details .billing-details form .products .payment .pay {
+  margin-bottom: 20px;
+}
+
+.section-billing-details .billing-details form .products .payment .pay .group {
+  display: flex;
+  align-items: center;
+}
+
+.section-billing-details .billing-details form .products .payment .pay .group input {
+  display: none;
+  appearance: none;
+  position: relative;
+}
+
+.section-billing-details .billing-details form .products .payment .pay .group label {
+  cursor: pointer;
+  position: relative;
+}
+
+/* start style custom checkbox */
+
+.section-billing-details .billing-details .payment .pay .group input+label:before,
+.section-billing-details .billing-details .payment .pay .group input:checked+label:after,
+.section-billing-details .billing-details .payment .pay .group input:hover+label:after {
+  content: '';
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.section-billing-details .billing-details .payment .pay .group input+label:before {
+  width: 20px;
+  height: 20px;
+  left: -35px;
+  border: 2px solid var(--main-color);
+  background-color: var(--light-color);
+}
+
+.section-billing-details .billing-details .payment .pay .group input:checked+label:after,
+.section-billing-details .billing-details .payment .pay .group input:hover+label:after {
+  width: 10px;
+  height: 10px;
+  left: -28px;
+  background-color: var(--main-color);
+}
+
+.section-billing-details .billing-details .payment .pay .group input:not(:checked):hover+label:after {
+  opacity: .3;
+}
+
+/* end style custom checkbox */
+
+.section-billing-details .billing-details form .products .payment .pay .group img {
+  width: 100px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.section-billing-details .billing-details form .products .payment .pay:not(.active) .desc {
+  display: none;
+}
+
+.section-billing-details .billing-details form .products .payment .pay .desc {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 5px 0 0 30px;
+}
+
+.section-billing-details .billing-details form .products .payment .place-order a {
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: -40px;
+  padding-block: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+/* end style component section billing details */

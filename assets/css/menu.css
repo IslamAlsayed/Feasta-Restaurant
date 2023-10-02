@@ -1,0 +1,302 @@
+
+/* start style component starters */
+.section-starters {
+  width: 100%;
+  height: 100vh;
+  margin-block: 50px;
+  position: relative;
+}
+
+.section-starters:before,
+.section-starters:after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(3px 10px 5px rgb(0 0 0 / 0.4));
+}
+
+.section-starters.starters1:before {
+  width: 150px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+  background-image: url('../images/dishes/dish1.png');
+}
+
+.section-starters.starters2:before {
+  width: 150px;
+  height: 150px;
+  top: 50px;
+  right: 50px;
+  background-image: url('../images/dishes/burger.png');
+}
+
+.section-starters.starters3:before {
+  width: 250px;
+  height: 150px;
+  top: -100px;
+  right: 50px;
+  background-image: url('../images/dishes/dessert2.png');
+}
+
+/* .section-starters.starters1:after {
+  width: 200px;
+  height: 150px;
+  bottom: 50px;
+  right: 50px;
+  background-image: url('../images/dishes/dish2.png');
+} */
+
+/* .section-starters.starters2:after {
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 50px;
+  background-image: url('../images/dishes/salads1.png');
+} */
+
+.section-starters.starters3:after {
+  width: 300px;
+  height: 150px;
+  bottom: 0;
+  left: 50px;
+  background-image: url('../images/dishes/dessert3.png');
+}
+
+/* start style component starters [ title ] */
+.section-starters .starters-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-starters .starters-title span {
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-family: var(--Playball);
+}
+
+/* start style component starters */
+.section-starters .starters {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.section-starters .starters>div {
+  width: 50%;
+}
+
+/* start style component starters [ image ] */
+.section-starters .starters-img {
+  filter: drop-shadow(3px 10px 5px rgb(0 0 0 / 0.4));
+}
+
+/* start style component starters [ cards ] */
+.section-starters .starters-cards {
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-color);
+}
+
+/* start style component starters [ card ] */
+.section-starters .starters-cards a.card {
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  color: var(--dark-color-50);
+}
+
+.section-starters .starters-cards a.card::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: .1s;
+  box-shadow: 0 0 0 2px var(--main-color);
+}
+
+.section-starters .starters-cards a.card.active::before {
+  opacity: 1;
+}
+
+.section-starters .starters-cards a.card:not(.active):hover::before {
+  opacity: .5;
+}
+
+.section-starters .starters-cards a.card .card-img {
+  width: 70px;
+}
+
+.section-starters .starters-cards a.card .card-info {
+  flex: 1;
+}
+
+.section-starters .starters-cards a.card .card-info>div {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.section-starters .starters-cards a.card .card-info>div>span:last-child {
+  color: var(--main-color);
+}
+
+.section-starters .starters-cards a.card .card-info>div::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px dotted var(--main-color);
+}
+
+.section-starters .starters-cards a.card .card-info>div+p {
+  font-size: 12px;
+}
+
+/* end style component starters */
+
+/* start style component discount */
+.section-discount {
+  position: relative;
+  padding-block: 50px;
+}
+
+.section-discount::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .2;
+  z-index: -1;
+  background-color: var(--light-color-50);
+}
+
+.section-discount .discount {
+  gap: 20px;
+  display: flex;
+}
+
+.section-discount .discount .discount-img {
+  width: 40%;
+}
+
+.section-discount .discount .discount-img img {
+  filter: drop-shadow(3px 10px 5px rgb(0 0 0 / 0.4));
+}
+
+.section-discount .discount .discount-info {
+  flex: 1;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+}
+
+.section-discount .discount .discount-info span {
+  text-transform: uppercase;
+}
+
+.section-discount .discount .discount-info h2 {
+  font-size: 40px;
+  margin-block: 10px;
+  color: var(--main-color);
+}
+
+.section-discount .discount .discount-info p {
+  line-height: 1.6;
+}
+
+.section-discount .discount .discount-info a {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+/* end style component discount */
+
+/* start style component week menu */
+.section-week-menu {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-week-menu .week-menu-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  font-family: var(--Playball);
+}
+
+.section-week-menu .week-menu-title span {
+  color: var(--main-color);
+}
+
+.section-week-menu .week-menu-content {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: start;
+  font-family: var(--Roboto);
+  text-transform: capitalize;
+}
+
+.section-week-menu .week-menu-content .week-menu-info>span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-family: var(--Playball);
+}
+
+.section-week-menu .week-menu-content .week-menu-info .item {
+  margin-bottom: 30px;
+}
+
+.section-week-menu .week-menu-content .week-menu-info .item>div {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-week-menu .week-menu-content .week-menu-img {
+  width: 300px;
+  height: 290px;
+  transform: translateY(21px);
+}
+
+.section-week-menu .week-menu-content .week-menu-img img {
+  transform: scalex(-1);
+}
+
+/* end style component week menu */

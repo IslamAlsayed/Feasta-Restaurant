@@ -1,0 +1,368 @@
+/* start style component chef */
+.section-chef {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/backgrounds/background2.jpg');
+}
+
+.section-chef::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  z-index: 1;
+  background-color: var(--dark-color);
+}
+
+.section-chef .chef {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.section-chef .chef>div {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* style component chef [ info ] */
+.section-chef .chef .chef-info {
+  display: grid;
+  text-align: center;
+  place-content: center;
+  text-transform: capitalize;
+  color: var(--light-color-50);
+}
+
+.section-chef .chef .chef-info span {
+  font-size: 50px;
+  color: var(--main-color);
+  font-family: var(--Playball);
+}
+
+.section-chef .chef .chef-info>p {
+  font-size: 24px;
+  font-family: var(--Roboto);
+}
+
+/* style component chef [ box border ] */
+.section-chef .chef .box-border>div {
+  position: absolute;
+  z-index: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--main-color);
+}
+
+.section-chef .chef .box-border .top,
+.section-chef .chef .box-border .bottom {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-chef .chef .box-border .right,
+.section-chef .chef .box-border .left {
+  height: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-chef .chef .box-border .top {
+  top: 0;
+}
+
+.section-chef .chef .box-border .right {
+  right: 0;
+}
+
+.section-chef .chef .box-border .bottom {
+  bottom: 0;
+}
+
+.section-chef .chef .box-border .left {
+  left: 0;
+}
+
+/* end style component chef */
+
+/* start style component cheffs */
+.section-cheffs .cheffs {
+  gap: 50px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+/* .section-cheffs .cheffs a {
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+
+.section-cheffs .cheffs .chef {
+  gap: 10px;
+  display: flex;
+  position: relative;
+  padding-bottom: 50px;
+  text-transform: capitalize;
+  font-family: var(--Roboto);
+  justify-content: space-between;
+}
+
+.section-cheffs .cheffs .chef:not(:last-child)::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .1;
+  border-bottom: 2px solid var(--dark-color);
+}
+
+
+/* start style component cheffs [ chef image ] */
+.section-cheffs .cheffs .chef .chef-img {
+  width: calc(100% / 3);
+  width: 40%;
+  width: 250px;
+  position: relative;
+}
+
+.section-cheffs .cheffs .chef .chef-img>a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* start style component cheffs [ box borders ] */
+.section-cheffs .cheffs .chef .chef-img .boxs>.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .7;
+  transition: .3s;
+  background-color: var(--main-color);
+}
+
+.section-cheffs .cheffs .chef .chef-img .boxs .box-top,
+.section-cheffs .cheffs .chef .chef-img .boxs .box-bottom {
+  height: 0;
+  clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
+
+.section-cheffs .cheffs .chef .chef-img .boxs .box-left,
+.section-cheffs .cheffs .chef .chef-img .boxs .box-right {
+  width: 0;
+  clip-path: polygon(50% 50%, 0 0, 0 100%);
+}
+
+.section-cheffs .cheffs .chef .chef-img .boxs .box-top,
+.section-cheffs .cheffs .chef .chef-img .boxs .box-left {
+  top: 0;
+  left: 0;
+}
+
+.section-cheffs .cheffs .chef .chef-img .boxs .box-bottom,
+.section-cheffs .cheffs .chef .chef-img .boxs .box-right {
+  bottom: 0;
+  right: 0;
+  transform: scale(-1);
+}
+
+.section-cheffs .cheffs .chef:hover .chef-img .boxs .box {
+  width: 100%;
+  height: 100%;
+}
+
+/* start style component cheffs [ social links ] */
+.section-cheffs .cheffs .chef .chef-img .social {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  border: 1px solid var(--light-color);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.section-cheffs .cheffs .chef:hover .chef-img .social {
+  opacity: 1;
+  transition-delay: .3s;
+  transition: opacity .3s;
+}
+
+/* start style component cheffs [ social icons ] */
+.section-cheffs .cheffs .chef .chef-img .social .icons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons a {
+  transition: .1s;
+  text-decoration: none;
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons a:hover {
+  margin-top: -5px;
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons>a:first-child i {
+  color: var(--facebook-color);
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons>a:nth-child(2) i {
+  color: var(--twitter-color);
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons>a:nth-child(3) i {
+  color: var(--linkedin-color);
+}
+
+.section-cheffs .cheffs .chef .chef-img .social .icons>a:last-child i {
+  color: var(--google-color);
+}
+
+/* start style component cheffs [ chef info ] */
+.section-cheffs .cheffs .chef .chef-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.section-cheffs .cheffs .chef .chef-info .info>span {
+  font-style: italic;
+}
+
+.section-cheffs .cheffs .chef .chef-info .info h2 {
+  margin-block: 10px;
+  color: var(--main-color);
+}
+
+.section-cheffs .cheffs .chef .chef-info .info p,
+.section-cheffs .cheffs .chef .chef-info .quote>p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* start style component cheffs [ chef quote ] */
+.section-cheffs .cheffs .chef .chef-info .quote>span {
+  display: block;
+  font-weight: 700;
+  margin-block: 10px;
+  color: var(--facebook-color);
+}
+
+/* start style component cheffs [ chef favourate dish ] */
+.section-cheffs .cheffs .chef .chef-info .favourate-dish {
+  margin-top: 10px;
+}
+
+.section-cheffs .cheffs .chef .chef-info .favourate-dish>p {
+  margin-block: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-cheffs .cheffs .chef .chef-info .favourate-dish>p>span {
+  color: var(--main-color);
+}
+
+.section-cheffs .cheffs .chef .chef-info .favourate-dish>div {
+  gap: 10px;
+  display: flex;
+}
+
+.section-cheffs .cheffs .chef .chef-info .favourate-dish>div>.fav-img {
+  width: 70px;
+}
+
+.section-cheffs .cheffs .chef .chef-info .favourate-dish>div>.fav-info {
+  flex: 1;
+  font-size: 12px;
+}
+
+.section-cheffs .cheffs .chef .chef-details>a {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 100px;
+  overflow: hidden;
+  padding-block: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+.section-cheffs .cheffs .chef .chef-details>a::before,
+.section-cheffs .cheffs .chef .chef-details>a::after {
+  content: '';
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: .7;
+  transition: .3s;
+  filter: blur(2px);
+  transform: skewX(-20deg);
+  background-color: var(--light-color);
+  animation: 2s infinite linear;
+}
+
+.section-cheffs .cheffs .chef .chef-details>a::before {
+  right: -100px;
+  animation-name: light_1;
+}
+
+.section-cheffs .cheffs .chef .chef-details>a::after {
+  right: -130px;
+  animation-name: light_2;
+}
+
+.section-cheffs .cheffs .chef .chef-details>a:hover::before,
+.section-cheffs .cheffs .chef .chef-details>a:hover::after {
+  opacity: .3;
+  animation-play-state: paused;
+}
+
+@keyframes light_1 {
+  0% {
+    right: -100px;
+  }
+
+  100% {
+    right: 180px;
+  }
+}
+
+@keyframes light_2 {
+  0% {
+    right: -130px;
+  }
+
+  100% {
+    right: 150px;
+  }
+}
+
+/* end style component cheffs */
