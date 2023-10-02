@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logos/fevicon1.png" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <!-- component header -->
+    <header class="header">
+      <!-- the header file will include from the JavaScript -->
+    </header>
+
+    <!-- section menu -->
+    <section class="section-menu">
+      <div class="container">
+        <div class="menu">
+          <!-- section content -->
+          <div class="menu-info">
+            <span>cart shopping</span>
+            <p>crafted dishes sourced best incredients</p>
+          </div>
+
+          <!-- box border -->
+          <div class="box-border">
+            <div class="top"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section billing details -->
+    <section class="section-billing-details">
+      <div class="container">
+        <!-- billing details -->
+        <div class="billing-details">
+          <form action="">
+            <!-- billing details -->
+            <div class="details">
+              <!-- coupon -->
+              <div class="coupon">
+                <input type="text" id="coupon" />
+                <label for="coupon"
+                  >have a coupon? click here to
+                  <span>enter your code</span></label
+                >
+              </div>
+
+              <h2>billing details</h2>
+
+              <!-- input [ first, last ] name -->
+              <div class="groups">
+                <div class="group">
+                  <label for="fname">first name<span>*</span></label>
+                  <input type="text" id="fname" />
+                </div>
+                <div class="group">
+                  <label for="lname">last name<span>*</span></label>
+                  <input type="text" id="lname" />
+                </div>
+              </div>
+
+              <!-- input [ company name ] -->
+              <label for="cname">company name</label>
+              <input type="text" id="cname" />
+
+              <!-- input [ email, phone ] -->
+              <div class="groups">
+                <div class="group">
+                  <label for="email">email address<span>*</span></label>
+                  <input type="email" id="email" />
+                </div>
+                <div class="group">
+                  <label for="phone">phone<span>*</span></label>
+                  <input type="text" id="phone" />
+                </div>
+              </div>
+
+              <!-- input [ country ] -->
+              <label for="country">country</label>
+              <select id="country">
+                <option value="egypt">egypt</option>
+                <option value="india">india</option>
+                <option value="amarica">amarica</option>
+                <option value="sudia">sudia</option>
+                <option value="syria">syria</option>
+                <option value="trkish">trkish</option>
+              </select>
+
+              <!-- input [ address ] -->
+              <label for="address">address<span>*</span></label>
+              <input type="text" id="address" />
+
+              <!-- input [ city ] -->
+              <label for="city">town / city<span>*</span></label>
+              <input type="text" id="city" />
+
+              <!-- input [ state ] -->
+              <div class="groups">
+                <div class="group">
+                  <label for="state">state / country<span>*</span></label>
+                  <input type="text" id="state" />
+                </div>
+                <div class="group">
+                  <label for="postCode">post code / zip<span>*</span></label>
+                  <input type="text" id="postCode" />
+                </div>
+              </div>
+
+              <!-- input [ create an account ] -->
+              <div class="checkbox">
+                <input type="checkbox" id="account" />
+                <label for="account">create an account?</label>
+              </div>
+
+              <!-- order notes -->
+              <div class="order-notes">
+                <h2>additional information</h2>
+                <label for="note">order notes</label>
+                <textarea
+                  id="note"
+                  placeholder="notes about your order, rg speacial notes for delivery"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- total products -->
+            <div class="products">
+              <!-- row -->
+              <div class="row">
+                <div class="col">product</div>
+                <div class="col">total</div>
+              </div>
+
+              <!-- row -->
+              <div class="row">
+                <div class="col">classic cheese burger</div>
+                <div class="col"><span>$</span> 78.50</div>
+              </div>
+
+              <!-- row -->
+              <div class="row">
+                <div class="col">chicken caesar salad</div>
+                <div class="col"><span>$</span> 30.14</div>
+              </div>
+
+              <!-- row -->
+              <div class="row">
+                <div class="col">subtotal</div>
+                <div class="col"><span>$</span> 108.64</div>
+              </div>
+
+              <!-- row -->
+              <div class="row">
+                <div class="col">discount</div>
+                <div class="col">---</div>
+              </div>
+
+              <!-- row -->
+              <div class="row">
+                <div class="col">total</div>
+                <div class="col"><span>$</span> 108.64</div>
+              </div>
+
+              <div class="payment">
+                <!-- pay way -->
+                <div class="pay active">
+                  <div class="group">
+                    <input name="payment" type="radio" id="bank" checked />
+                    <label for="bank">direct bank transfer</label>
+                  </div>
+
+                  <!-- description -->
+                  <div class="desc">
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order won't be
+                    shipped until the funds have cleared in our account.
+                  </div>
+                </div>
+
+                <!-- pay way -->
+                <div class="pay">
+                  <div class="group">
+                    <input name="payment" type="radio" id="cash" />
+                    <label for="cash">cash on delivery</label>
+                  </div>
+
+                  <!-- description -->
+                  <div class="desc">
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order won't be
+                    shipped until the funds have cleared in our account.
+                  </div>
+                </div>
+
+                <!-- pay way -->
+                <div class="pay">
+                  <div class="group">
+                    <input name="payment" type="radio" id="paypal" />
+                    <label for="paypal">paypal</label>
+                    <img src="./assets/images/icons/main-colors/paypal.png" alt="" />
+                  </div>
+
+                  <!-- description -->
+                  <div class="desc">
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order won't be
+                    shipped until the funds have cleared in our account.
+                  </div>
+                </div>
+                <!-- place order -->
+                <div class="place-order">
+                  <a href="">place order</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- component footer -->
+    <footer class="footer target">
+      <!-- the footer file will include from the JavaScript -->
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
