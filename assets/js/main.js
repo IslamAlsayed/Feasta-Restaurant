@@ -55,7 +55,7 @@ if (headerInner) {
       });
 
       // get pathname to url
-      var url = window.location.pathname;
+      var url = window.location.href;
       var lastSegment = url.split("/").pop().split(".").shift();
       var navMenu = document.querySelector(".navbar .menu");
 
@@ -90,7 +90,7 @@ if ((headTitle = document.querySelector("head"))) {
   const Domain = window.location.href.split("/").slice(0, -1).join("/");
 
   // the 'name page' [ main page ] don".html" like => 'index' , 'about us' , 'contact us'
-  const name_File_HTML = window.location.pathname;
+  const name_File_HTML = window.location.href;
   // const custom_File_Css = name_File_HTML.split("Feasta%20-%20Restaurant/").pop().split(".").shift();
   // const custom_File_Css = name_File_HTML.split("Feasta-Restaurant/").pop().split(".").shift();
   const custom_File_Css = name_File_HTML.split("/").pop().split(".").shift();
