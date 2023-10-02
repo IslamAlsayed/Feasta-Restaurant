@@ -115,8 +115,10 @@ if ((headTitle = document.querySelector("head"))) {
 
   if (custom_File_Css == '' || custom_File_Css == 'index') {
     linkStyleCss.rel = "stylesheet", linkStyleCss.href = `./assets/css/index.css`;
+  } else if (custom_File_Css.split('/')[0] == 'pages') {
+    linkStyleCss.rel = "stylesheet", linkStyleCss.href = `../assets/css/${custom_File_Css.split('/')[1]}.css`;
   } else {
-    linkStyleCss.rel = "stylesheet", linkStyleCss.href = `${srcPages}/assets/css/${custom_File_Css}.css`;
+    linkStyleCss.rel = "stylesheet", linkStyleCss.href = `./assets/css/${custom_File_Css}.css`;
   }
 
   // create a new link font [ playball ] in head tag
