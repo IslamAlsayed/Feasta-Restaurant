@@ -18,7 +18,7 @@ if (headerInner) {
 
       onload = () => {
         document.querySelectorAll('.logoImg').forEach(img => {
-          img.src = './Feasta-Restaurant/assets/images/logos/bibimbap.png';
+          img.src = './assets/images/logos/bibimbap.png';
         })
       }
 
