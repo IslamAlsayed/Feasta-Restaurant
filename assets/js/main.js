@@ -113,11 +113,11 @@ if ((headTitle = document.querySelector("head"))) {
   // create a new link style [ css ] in head tag
   const linkStyleCss = document.createElement("link");
 
-  // if (!name_File_HTML.split("/")[1] || name_File_HTML.split("/")[1] == '') {
+  if (name_File_HTML.split("/")[1] || name_File_HTML.split("/")[1] != '') {
     // linkStyleCss.rel = "stylesheet", linkStyleCss.href = `./assets/css/index.css`;
   // } else {
     linkStyleCss.rel = "stylesheet", linkStyleCss.href = `${srcPages}/assets/css/` + custom_File_Css + ".css";
-  // }
+  }
 
   // create a new link font [ playball ] in head tag
   const linkFontPlayball = document.createElement("link");
