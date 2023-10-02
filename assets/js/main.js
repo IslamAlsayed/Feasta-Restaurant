@@ -16,12 +16,6 @@ if (headerInner) {
     .then((data) => {
       headerInner.innerHTML = data;
 
-      onload = () => {
-        document.querySelectorAll('.logoImg').forEach(img => {
-          img.src = './assets/images/logos/bibimbap.png';
-        })
-      }
-
       // function open dropmenu by click of li
       let menu_lis = document.querySelectorAll(".navbar .menu li");
 
