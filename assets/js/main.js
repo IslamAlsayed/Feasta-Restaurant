@@ -25,7 +25,9 @@ if (headerInner) {
       onload = () => {
         document.querySelectorAll('.logoImg').forEach(img => {
           var img_src = img.src.split('pages/').join('')
-          img.src = img_src + 'assets/images/logos/bibimbap.png'
+          // console.log(img_src)
+          // img.src = img_src + 'assets/images/logos/bibimbap.png'
+          img.src = './assets/images/logos/bibimbap.png';
         })
 
         document.querySelectorAll('.footer .footer-contact .imgs img').forEach(img => {
@@ -108,15 +110,17 @@ if ((headTitle = document.querySelector("head"))) {
 
   // the 'name page' [ main page ] don".html" like => 'index' , 'about us' , 'contact us'
   const name_File_HTML = window.location.pathname;
+  // const custom_File_Css = name_File_HTML.split("Feasta%20-%20Restaurant/").pop().split(".").shift();
+  // const custom_File_Css = name_File_HTML.split("Feasta-Restaurant/").pop().split(".").shift();
   const custom_File_Css = name_File_HTML.split("/").pop().split(".").shift();
 
   // create a new link style [ css ] in head tag
   const linkStyleCss = document.createElement("link");
 
-  if (name_File_HTML.split("/")[1] == '') {
+  if (custom_File_Css == '' || custom_File_Css == 'index') {
     linkStyleCss.rel = "stylesheet", linkStyleCss.href = `./assets/css/index.css`;
   } else {
-    linkStyleCss.rel = "stylesheet", linkStyleCss.href = `${srcPages}/assets/css/` + custom_File_Css + ".css";
+    linkStyleCss.rel = "stylesheet", linkStyleCss.href = `./assets/css/${custom_File_Css}.css`;
   }
 
   // create a new link font [ playball ] in head tag
